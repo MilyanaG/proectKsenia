@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity2">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/law"
+                android:layout_height="@dimen/lah"
+                android:src="@drawable/top_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:layout_width="@dimen/layout_m"
+                android:layout_height="@dimen/_144"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="@dimen/martopi"
+                android:text="@string/login_to_your_account"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/tsiz"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="@dimen/deww"
+                android:layout_height="@dimen/dewh"
+                android:layout_marginTop="@dimen/dewm"
+                android:src="@drawable/women2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+            <EditText
+                android:id="@+id/appCompatButton"
+                android:layout_width="@dimen/textp_w"
+                android:layout_height="@dimen/textp_h"
+                android:layout_marginTop="@dimen/textp_m"
+                android:background="@drawable/bot2"
+                android:gravity=""
+                android:hint="@string/enter_your_email"
+                android:textColorHint="@color/C4C0C2"
+                android:paddingStart="@dimen/pad"
+                android:textAllCaps="false"
+                android:textColor="@color/_717171"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="@dimen/layout_m"
+                android:layout_height="@dimen/lay_mab"
+                android:layout_marginStart="@dimen/_28"
+                android:layout_marginTop="@dimen/pad"
+                android:text="@string/your_email"
+                android:textColor="@color/_5325"
+                android:textSize="@dimen/text_siz"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/appCompatButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"
+                />
+
+            <TextView
+                android:layout_width="@dimen/layout_m"
+                android:layout_height="@dimen/lay_mab"
+                android:layout_marginStart="@dimen/_28"
+                android:layout_marginTop="@dimen/mar_t"
+                android:layout_marginBottom="@dimen/marginbot"
+                android:text="@string/your_password"
+                android:textColor="@color/_5325"
+                android:textSize="@dimen/text_siz"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/editText4"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="@dimen/textp_w"
+                android:layout_height="@dimen/textp_h"
+                android:layout_marginTop="@dimen/_45"
+                android:paddingStart="@dimen/pad"
+                android:background="@drawable/bot2"
+                android:gravity=""
+                android:hint="@string/enter_your_password"
+                android:textColorHint="@color/C4C0C2"
+                android:textAllCaps="false"
+                android:textColor="@color/_717171"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="@dimen/for_w"
+                android:layout_height="@dimen/for_h"
+                android:layout_marginTop="@dimen/for_m"
+                android:text="@string/forget_password"
+                android:textColor="@color/_5325"
+                android:textSize="@dimen/texs"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/fas_w"
+                android:layout_height="@dimen/fas_w"
+                android:layout_marginStart="@dimen/star"
+                android:layout_marginBottom="@dimen/for_h"
+                android:src="@drawable/facebook"
+                app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/fas_w"
+                android:layout_height="@dimen/fas_w"
+                android:layout_marginTop="@dimen/lay_mb"
+                android:layout_marginEnd="@dimen/ser"
+                android:src="@drawable/google"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.607"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editText4"
+                app:layout_constraintVertical_bias="0.671" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="@dimen/fas_w"
+                android:layout_height="@dimen/fas_w"
+                android:layout_marginEnd="@dimen/star"
+                android:layout_marginBottom="@dimen/for_h"
+                android:src="@drawable/twitter"
+                app:layout_constraintBottom_toTopOf="@+id/appCompatButton2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/appCompatButton2"
+                android:layout_width="@dimen/lay_wt"
+                android:layout_height="@dimen/lay_ht"
+                android:layout_marginTop="@dimen/for_h"
+                android:background="@drawable/bot3"
+                android:drawableEnd="@drawable/circle"
+                android:drawablePadding="-53dp"
+                android:paddingEnd="5dp"
+                android:foregroundGravity="center_horizontal"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/for_h"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/reg"
+                android:layout_width="@dimen/lay_wt"
+                android:layout_height="@dimen/lay_ht"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="@dimen/tex_m"
+                android:background="@drawable/bot1"
+                android:text="@string/don_t_have_an_account_register"
+                android:textAllCaps="false"
+                android:textColor="#375735"
+                android:textSize="@dimen/sis"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appCompatButton2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
